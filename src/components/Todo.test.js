@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Todo from "./todoComponent";
+import Todo from "./Todo";
 
 describe("Given a todoComponent", () => {
   describe("When it's rendered", () => {
