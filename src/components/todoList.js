@@ -1,11 +1,15 @@
 import Todo from "./todoComponent";
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
+  todos.map((todo) => {
+    return todo;
+  });
+
   return (
     <ul>
-      <Todo></Todo>
-      <Todo></Todo>
-      <Todo></Todo>
+      {todos.map((todo) => {
+        return <Todo key={todo.id} todo={todo}></Todo>;
+      })}
     </ul>
   );
 };
