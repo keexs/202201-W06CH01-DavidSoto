@@ -1,4 +1,4 @@
-import Todo from "./todoComponent";
+import Todo from "./Todo";
 
 const TodoList = ({ todos }) => {
   todos.map((todo) => {
