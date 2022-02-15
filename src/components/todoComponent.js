@@ -1,8 +1,8 @@
-const Todo = () => {
+const Todo = ({ todo: { text, done } }) => {
   return (
     <>
       <li>
-        something
+        {text}
         <button>delete</button>
       </li>
     </>
