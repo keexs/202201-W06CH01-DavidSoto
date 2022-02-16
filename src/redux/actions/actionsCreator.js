@@ -1,6 +1,11 @@
 import { actionsTypes } from "./actionsTypes";
 
-export const loadTodosAction = (todos) => ({
+export const loadTodos = (todos) => ({
   type: actionsTypes.loadTodos,
   todos,
+});
+
+export const deleteTodo = (id) => ({
+  type: actionsTypes.deleteTodo,
+  id,
 });

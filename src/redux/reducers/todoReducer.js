@@ -6,7 +6,10 @@ const todoReducer = (todos = [], action = {}) => {
   switch (action.type) {
     case actionsTypes.loadTodos:
       newTodos = [...action.todos];
+      break;
 
+    case actionsTypes.deleteTodo:
+      newTodos = todos.filter((todo) => todo.id !== action.id);
       break;
 
     default:
