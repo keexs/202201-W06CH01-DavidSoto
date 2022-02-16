@@ -1,6 +1,6 @@
 import Todo from "./Todo";
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, deleteAction }) => {
   todos.map((todo) => {
     return todo;
   });
